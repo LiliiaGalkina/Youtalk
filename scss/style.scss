@@ -1,0 +1,350 @@
+/*fonts*/
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"),
+	     url("../fonts/Montserrat-Regular.woff") format("woff"),
+             url("../fonts/Montserrat-Regular.ttf") format("ttf"); 
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat"),
+	     url("../fonts/Montserrat-Medium.woff") format("woff"),
+             url("../fonts/Montserrat-Medium.ttf") format("ttf"); 
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat"),
+	     url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+             url("../fonts/Montserrat-SemiBold.ttf") format("ttf"); 
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat"),
+	     url("../fonts/Montserrat-Bold.woff") format("woff"),
+             url("../fonts/Montserrat-Bold.ttf") format("ttf"); 
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Montserrat"),
+	     url("../fonts/Montserrat-Italic.woff") format("woff"),
+             url("../fonts/Montserrat-Italic.ttf") format("ttf"); 
+  }
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a {
+  color: inherit;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+body {
+    font-family: "Montserrat", serif;
+    color: #333333;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/*header*/
+
+.header {
+    padding: 20px 0;
+    box-shadow: 0 2px 0 #EFF2F2;
+    // .header__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__menu
+
+    &__menu {
+        margin-right: 15px;
+    }
+
+    // .header__menu-list
+
+    &__menu-list {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    // .header__menu-item
+
+    &__menu-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+   
+    // .header__menu-link
+
+    &__menu-link {
+        font-size: 0.875rem;
+        line-height: 114%;
+        letter-spacing: 0.25px;
+        transition: all 0.5s ease;
+        &_double {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .header__menu-link-text
+
+    &__menu-link-text {
+        margin-right: 8px;
+    }
+}
+
+.logo {
+    margin-right: 51px;
+}
+
+.button {
+
+    // .button_lightgreen
+
+    &_lightgreen {
+        padding: 14px 20px;
+        background-color: #E3F5F5;
+        color: #03B2A5;
+        font-size: 1rem;
+        line-height: 122%;
+        font-weight: 700;
+        transition: all 0.5s ease;
+        &:hover {
+           background-color: #03B2A5;
+           color: #E3F5F5;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .header {
+        box-shadow: none;
+    }
+    .logo {
+        margin-right: 32px;
+    }
+
+    .header__menu-item:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 970px) {
+    .header {
+        &__navigation {
+            width: 100%;
+            justify-content: space-between;
+        }
+        
+        .header__menu-item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    .button_lightgreen {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__menu-list {
+		display: none;
+	}
+	
+	.header__burger {
+		display: block;
+		position: absolute;
+		top: 31px;
+		right: 15px;
+		width: 18px;
+		height: 14px;
+		z-index: 5;
+		transition: all 0.5s ease;
+	}
+	
+	.header__burger span {
+	position: absolute;
+	background-color: #03B2A5;
+	left: 0;
+	top: 6px;
+	width: 100%;
+	height: 2px;
+	transition: all 0.3s ease 0s;
+	}
+	
+	.header__burger::before,
+	.header__burger::after {
+		content: '';
+		background-color: #03B2A5;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.header__burger::before {
+		top: 0;
+	}
+	
+	.header__burger::after {
+		bottom: 0;
+	}
+	
+	.header__burger_active span {
+		transform: scale(0);
+	}
+	
+	.header__burger_active::before {
+		background-color: #fff;
+		transform: rotate(45deg);
+		top: 19px;
+	}
+	
+	.header__burger_active::after {
+		background-color: #fff;
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	
+	.header__menu-list_active {
+		position: absolute;
+		z-index: 4;
+		display: block;
+		overflow: auto;
+		top: 0;
+		left: 0;
+		background-color: #03B2A5;
+		width: 100vw;
+		height: 100vh;
+		padding-top: 100px;
+		text-align: center;
+		transition: all 0.5s ease;
+		.header__menu-item {
+			&:not(:last-child){
+				margin-right: 0;
+				margin-bottom: 40px;
+			}
+		}
+		.header__menu-link {
+			font-size: 2rem;
+			color: #E3F5F5;
+		}
+        .header__menu-link_double {
+            align-self: center;
+        }
+	}    
+
+}
+
+
