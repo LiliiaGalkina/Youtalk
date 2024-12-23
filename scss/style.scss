@@ -188,12 +188,16 @@ body {
         letter-spacing: 0.25px;
         transition: all 0.5s ease;
         &_double {
-            display: flex;
-            align-items: flex-end;
+           display: flex;
+           align-items: flex-end;
         }
 
         &:hover {
-            text-decoration: underline;
+            color: #03B2A5;
+				.header__menu-link-img {
+					transition: all 0.5s ease;
+					transform: rotate(180deg);
+				}
         }
     }
 
@@ -221,8 +225,9 @@ body {
         font-weight: 700;
         transition: all 0.5s ease;
         &:hover {
-           background-color: #03B2A5;
-           color: #E3F5F5;
+         background: #b4e8e4;
+    		border-color: #b4e8e4;
+    		color: #00a89b;
         }
     }
 }
@@ -308,13 +313,13 @@ body {
 	.header__burger_active::before {
 		background-color: #fff;
 		transform: rotate(45deg);
-		top: 19px;
+		top: 0;
 	}
 	
 	.header__burger_active::after {
 		background-color: #fff;
 		transform: rotate(-45deg);
-		bottom: 9px;
+		bottom: 12px;
 	}
 	
 	.header__menu-list_active {
@@ -340,11 +345,19 @@ body {
 			font-size: 2rem;
 			color: #E3F5F5;
 		}
-        .header__menu-link_double {
-            align-self: center;
-        }
-	}    
-
+		.header__menu-link_double {
+			justify-content: center;
+			align-items: center;
+		}
+		.header__menu-link-img {
+			transform: rotate(-90deg);
+		}
+   }    
 }
 
+@media (max-width: 414px) {
+	.header__menu-link {
+		font-size: 1.625rem;
+	}
+}
 
