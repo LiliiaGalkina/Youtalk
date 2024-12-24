@@ -355,6 +355,9 @@ body {
   background-color: #fff;
   border: 1px solid #C1C5CD;
   border-radius: 24px;
+  font-size: 0.875rem;
+  line-height: 143%;
+  font-weight: 600;
 }
 .item-filter_double {
   display: flex;
@@ -375,6 +378,7 @@ body {
 }
 
 .card {
+  position: relative;
   border: 1px solid #DEDEDE;
   border-radius: 16px;
   overflow: hidden;
@@ -420,6 +424,19 @@ body {
   margin-bottom: 20px;
   font-size: 0.875rem;
   line-height: 143%;
+}
+.card__filter-first, .card__filter-second {
+  position: absolute;
+  left: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.card__filter-first {
+  top: 8px;
+}
+.card__filter-second {
+  top: 48px;
 }
 
 .cards {
@@ -514,5 +531,10 @@ body {
   .title-main {
     font-size: 1.5rem;
     line-height: 133%;
+  }
+}
+@media (max-width: 310px) {
+  .item-filter {
+    font-size: 0.75rem;
   }
 }
