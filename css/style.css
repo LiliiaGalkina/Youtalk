@@ -1117,3 +1117,36 @@ body {
   font-size: 1rem;
   line-height: 150%;
 }
+
+.choose-psychologist {
+  position: relative;
+}
+.choose-psychologist .container {
+  padding: 72px 29px 0 0;
+  border-top: 1px solid #DEDEDE;
+}
+.choose-psychologist__items {
+  display: flex;
+  justify-content: space-between;
+}
+.choose-psychologist__item:first-child {
+  max-width: 348px;
+}
+.choose-psychologist__title {
+  margin-bottom: 24px;
+}
+.choose-psychologist__text {
+  margin-bottom: 32px;
+  font-size: 1.125rem;
+  line-height: 144%;
+}
+.choose-psychologist__button {
+  margin: 0;
+  width: 238px;
+  height: 60px;
+}
+.choose-psychologist__decor {
+  position: absolute;
+  top: 72px;
+  right: 0;
+}

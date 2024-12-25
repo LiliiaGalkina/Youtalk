@@ -1442,34 +1442,55 @@ body {
 		}
 }
 .choose-psychologist {
+   position: relative;
+     
+     .container {
+        padding: 72px 29px 0 0 ;
+         border-top: 1px solid #DEDEDE;
+     }
 
 		// .choose-psychologist__items
 
 		&__items {
+            display: flex;
+            justify-content: space-between;
 		}
 
 		// .choose-psychologist__item
 
 		&__item {
+            &:first-child {
+                max-width: 348px;
+            }
 		}
 
 		// .choose-psychologist__title
 
 		&__title {
+            margin-bottom: 24px;
 		}
 
 		// .choose-psychologist__text
 
 		&__text {
-		}
+            margin-bottom: 32px;
+            font-size: 1.125rem;
+            line-height: 144%;
+        }
 
 		// .choose-psychologist__button
 
 		&__button {
+            margin: 0;
+            width: 238px;
+            height: 60px;
 		}
 
 		// .choose-psychologist__decor
 
 		&__decor {
+            position: absolute;
+            top: 72px;
+            right: 0;
 		}
 }
