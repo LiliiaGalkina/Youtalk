@@ -725,3 +725,395 @@ body {
     width: 90%;
   }
 }
+/*SECOND PAGE*/
+.second-container {
+  display: grid;
+  grid-template-columns: 58% 24%;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 133%;
+  font-weight: 700;
+}
+
+.list-item-green {
+  position: relative;
+  padding-left: 32px;
+}
+.list-item-green::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #03B2A5;
+  left: 8px;
+  top: 8px;
+}
+
+/*main*/
+.main-block {
+  margin-top: 54px;
+}
+.main-block__title {
+  margin-bottom: 16px;
+}
+.main-block__autor {
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  line-height: 143%;
+  color: #494949;
+}
+.main-block__img {
+  margin-bottom: 24px;
+  max-width: 690px;
+  height: 331px;
+}
+.main-block__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+.main-block__subtitle {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+.main-block__list {
+  margin-bottom: 24px;
+}
+.main-block__list-item {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.main-block__list-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.introduction__title {
+  margin-bottom: 16px;
+}
+.introduction__text {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+.introduction p.introduction__text:not(:last-child) {
+  margin-bottom: 16px;
+}
+.introduction__card {
+  position: relative;
+  margin: 40px 0 24px;
+  padding: 24px;
+  background-color: #F3F7FE;
+  border-radius: 16px;
+  font-size: 1rem;
+  line-height: 150%;
+}
+.introduction__card-text {
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.introduction__card-autor {
+  font-weight: 700;
+}
+.introduction__card-decor {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.what-to-do {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+}
+.what-to-do__title {
+  margin-bottom: 16px;
+}
+.what-to-do__list {
+  margin-bottom: 24px;
+}
+.what-to-do__list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.what-to-do__img {
+  margin-bottom: 24px;
+}
+.what-to-do__img figcaption {
+  font-size: 0.875rem;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+  color: #868686;
+}
+.what-to-do__img-pic {
+  margin-bottom: 16px;
+  max-width: 691px;
+  height: 365px;
+  overflow: hidden;
+}
+.what-to-do__img-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.what-to-do__text-center {
+  margin: 48px auto 72px;
+  padding: 24px 0;
+  max-width: 485px;
+  position: relative;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+.what-to-do__text-center-decor {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 120px);
+  z-index: -1;
+}
+.what-to-do__items {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.what-to-do__item-img {
+  margin-right: 15px;
+  flex: 0 1 282px;
+}
+.what-to-do__item-text {
+  flex: 0 1 385px;
+}
+.what-to-do__exercise {
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 16px;
+}
+.what-to-do__item-double {
+  flex: 0 1 333px;
+}
+.what-to-do__item-double:not(:last-child) {
+  margin-right: 15px;
+}
+.what-to-do__item-double-img {
+  margin-bottom: 24px;
+}
+.what-to-do__text-decor-yellow {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.what-to-do__links {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.what-to-do__link {
+  position: relative;
+  font-size: 0.875rem;
+  line-height: 143%;
+  font-weight: 400;
+  color: #2963A3;
+}
+.what-to-do__link:not(:last-child) {
+  margin-right: 20px;
+}
+.what-to-do__link:not(:last-child)::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #494949;
+  position: absolute;
+  right: -11px;
+  top: 50%;
+}
+
+.exercise_yellow {
+  background-color: #FEFAEC;
+}
+.exercise_rose {
+  background-color: #FFF3EB;
+}
+.exercise_green {
+  background-color: rgba(3, 178, 165, 0.1);
+}
+.exercise__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/*aside*/
+.aside {
+  padding-top: 88px;
+}
+.aside__card {
+  max-width: 282px;
+  border-radius: 16px;
+}
+
+.card-registration {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #E6F0FD;
+  text-align: center;
+}
+.card-registration__img {
+  margin-bottom: 24px;
+}
+.card-registration__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-registration__title {
+  margin-bottom: 11px;
+  font-size: 1.125rem;
+  line-height: 133%;
+  font-weight: 700;
+}
+.card-registration__text {
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  line-height: 143%;
+}
+.card-registration__button {
+  width: 234px;
+}
+
+.card-psychlogist {
+  margin-bottom: 28px;
+  padding: 24px 16px 36px;
+  position: relative;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0 30px 50px #EFF5FB;
+}
+.card-psychlogist__penson-info {
+  text-align: center;
+  padding-bottom: 16px;
+  box-shadow: 0 1px 0 #DEDEDE;
+}
+.card-psychlogist__img {
+  margin-bottom: 16px;
+}
+.card-psychlogist__title {
+  font-size: 1.25rem;
+  line-height: 140%;
+  font-weight: 700;
+}
+.card-psychlogist__subtitle {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+.card-psychlogist__text {
+  font-size: 0.875rem;
+  line-height: 143%;
+  color: #A2A7B1;
+  display: flex;
+  justify-content: center;
+}
+.card-psychlogist__text1 {
+  margin-right: 20px;
+  position: relative;
+}
+.card-psychlogist__text1::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #A2A7B1;
+  position: absolute;
+  right: -11px;
+  top: 50%;
+}
+.card-psychlogist__professional-info {
+  padding-top: 16px;
+}
+.card-psychlogist__subtitle-bold {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+.card-psychlogist__list {
+  margin-bottom: 20px;
+}
+.card-psychlogist__list-item {
+  font-size: 0.875rem;
+  line-height: 143%;
+}
+.card-psychlogist__list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.card-psychlogist__dop-item {
+  padding: 3px 6px;
+  position: absolute;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(243, 244, 248, 0.7);
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+.card-psychlogist__dop-item_first {
+  top: 16px;
+}
+.card-psychlogist__dop-item_second {
+  top: 48px;
+}
+
+.card-img {
+  margin-bottom: 42px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-price {
+  padding: 32px 54px 32px 32px;
+  background: url("../img/second-page/aside/gifts.png");
+  border: 1px solid #DEDEDE;
+  box-shadow: 0 30px 50px #EFF5FB;
+  border-radius: 24px;
+}
+.card-price__title {
+  margin-bottom: 16px;
+  font-size: 1.125rem;
+  line-height: 144%;
+  font-weight: 700;
+  color: #2963A3;
+}
+.card-price__title span {
+  font-size: 1.5rem;
+  line-height: 133%;
+}
+.card-price__text {
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  line-height: 143%;
+  color: #011632;
+}
+.card-price__price {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 133%;
+  font-weight: 700;
+}
+.card-price__button {
+  margin: 0;
+  width: 108px;
+  font-size: 1rem;
+  line-height: 150%;
+}
