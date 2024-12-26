@@ -788,6 +788,18 @@ body {
 .main-block__list {
   margin-bottom: 24px;
 }
+.main-block__list-dop {
+  margin-bottom: 4px;
+}
+.main-block__list-dop_first {
+  padding-left: 24px;
+}
+.main-block__list-dop_second {
+  padding-left: 40px;
+}
+.main-block__list-dop_third {
+  padding-left: 56px;
+}
 .main-block__list-item {
   font-size: 1rem;
   line-height: 150%;
@@ -952,6 +964,7 @@ body {
 /*aside*/
 .aside {
   padding-top: 88px;
+  position: relative;
 }
 .aside__card {
   max-width: 282px;
@@ -1118,6 +1131,13 @@ body {
   line-height: 150%;
 }
 
+.aside-decor {
+  position: absolute;
+  top: -2720px;
+  right: 0;
+}
+
+/*last block  choose-psychologist*/
 .choose-psychologist {
   position: relative;
 }
