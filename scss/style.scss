@@ -151,6 +151,7 @@ body {
 .header {
     padding: 20px 0;
     box-shadow: 0 2px 0 #EFF2F2;
+
     // .header__container
 
     &__container {
@@ -1162,6 +1163,11 @@ body {
 
 		&__item-double-img {
             margin-bottom: 24px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 		}
 
 		// .what-to-do__text-decor-yellow
@@ -1408,6 +1414,7 @@ body {
         object-fit: cover;
     }
 }
+
 .card-price {
     padding: 32px 54px 32px 32px;
     background: url("../img/second-page/aside/gifts.png");
@@ -1469,7 +1476,7 @@ body {
    position: relative;
      
      .container {
-        padding: 72px 29px 0 0 ;
+        padding: 72px 29px 26px 15px ;
          border-top: 1px solid #DEDEDE;
      }
 
@@ -1517,4 +1524,183 @@ body {
             top: 72px;
             right: 0;
 		}
+
+        &__decor-down {
+            width: 100%;
+            height: 85px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+}
+
+@media (max-width: 1180px) {
+    .card-registration__button {
+        width: 182px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .second-container {
+        max-width: 960px;
+        grid-template-columns: 70% 29%;
+    }
+    .main_second {
+        padding-bottom: 47px;
+    }
+
+    .aside-decor {
+        display: none;
+    }
+
+    .choose-psychologist__decor {
+        display: none;
+    }
+
+    .choose-psychologist {
+        display: none;
+    }
+
+    .what-to-do__links {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .second-container {
+        max-width: 728px;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .aside {
+        padding: 0 0 59px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 16px;
+
+        &__card {
+            max-width: 100%;
+        }
+    }
+
+    .card-img {
+        max-height: 242px;
+        overflow: hidden;
+    }
+
+    .card-price {
+        padding: 18px 42px 4px 21px;
+        max-height: 242px;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+@media (max-width: 598px) {
+    .main-block {
+        margin-top: 32px;
+
+        &__title {
+            font-size: 2rem;
+            line-height: 125%;
+        }
+    }
+
+    .main-block__img {
+        height: 207px;
+    }
+
+    .what-to-do__img-pic {
+        height: 207px;
+    }
+
+    .what-to-do__items {
+        flex-direction: column;
+    }
+
+    .what-to-do__item-img {
+        margin-right: 0;
+        margin-bottom: 16px;
+        flex: 0 1 auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    .what-to-do__item-text {
+        flex: 0 1 auto;
+    }
+
+    .what-to-do__item-double:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .aside {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card-img,
+    .card-price {
+        max-height: 100%;
+    }
+
+    .card-price { 
+        min-height: 248px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_second {
+        padding-bottom: 16px;
+    }
+
+    .main-block {
+        &__title {
+            font-size: 1.5rem;
+            line-height: 133%;
+        }
+
+        &__img {
+            margin-bottom: 16px;
+            height: 160px;
+        }
+    }
+
+    .title {
+        margin-bottom: 8px;
+        font-size: 1.125rem;
+        line-height: 144%;
+    }
+
+    .what-to-do {
+        &__list {
+            margin-bottom: 16px;
+        }
+
+        &__img {
+            margin-bottom: 16px;
+        }
+
+        &__img-pic {
+            height: 160px;
+        }
+
+        &__text-center {
+            margin: 24px auto 16px;
+            padding: 0;
+        }
+
+         &__item-double-img {
+            margin-bottom: 8px;
+            height: 235px;
+         }      
+    }
+
+    
 }
