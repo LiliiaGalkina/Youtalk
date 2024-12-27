@@ -375,6 +375,9 @@ body {
   line-height: 143%;
   font-weight: 600;
 }
+.item-filter:hover {
+  border: 1px solid #16C8BB;
+}
 .item-filter_double {
   display: flex;
   align-items: center;
