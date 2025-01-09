@@ -45,9 +45,17 @@
                 <button class="filter__item item-filter">Насилие</button>
                 <button class="filter__item item-filter">Личное здоровье</button>
             </div>
-            <div class="cards-big">
-                <a href="article-one.html" class="cards-big__item card">
-                    <div class="card__img"><img src="img/first-page/main/pic-big1.png" alt="десяток яиц с нарисованными рожицами"></div>
+            <div class="cards">
+                <a href="article-one.html" class="cards__item_big card">
+                    <div class="card__img">
+                        <picture>
+                            <source srcset="img/first-page/main/pic-big1-1024.png" media="(max-width: 1024px)">
+                            <source srcset="img/first-page/main/pic-big1-768.png" media="(max-width: 769px)">
+                            <source srcset="img/first-page/main/pic-big1-414.png" media="(max-width: 415px)">
+                            <source srcset="img/first-page/main/pic-big1-320.png" media="(max-width: 321px)">
+                            <img src="img/first-page/main/pic-big1.png" alt="десяток яиц с нарисованными рожицами">
+                        </picture>
+                    </div>
                     <div class="card__content">
                         <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
                         <div class="card__autor">Автор: Лиза Файнтух</div>
@@ -57,7 +65,7 @@
                     <div class="card__filter-first item-filter item-filter_double"><img src="img/first-page/main/horse-icon.svg" alt="head of horse icon">Самооценка и самопринятие</div>
                     <div class="card__filter-second item-filter item-filter_double"><img src="img/first-page/main/horse-icon.svg" alt="head of horse icon">Self</div>
                 </a>
-                <a href="article-two.html" class="cards-big__item card">
+                <a href="article-two.html" class="cards__item_big card">
                     <div class="card__img"><img src="img/first-page/main/pic-big2.png" alt="ноги бегущего по тропинке среди зеленых кустов человека"></div>
                     <div class="card__content">
                         <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
@@ -67,8 +75,6 @@
                     </div>
                     <div class="card__filter-first item-filter item-filter_double"><img src="img/first-page/main/horse-icon.svg" alt="head of horse icon">Self</div>
                 </a>
-            </div>
-            <div class="cards">
                 <a href="article-three.html" class="cards__item card">
                     <div class="card__img"><img src="img/first-page/main/pic-small1.png" alt="женщина лежит на кровати лицом вниз"></div>
                     <div class="card__content">
